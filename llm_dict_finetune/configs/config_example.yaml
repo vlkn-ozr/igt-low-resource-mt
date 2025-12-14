@@ -1,0 +1,73 @@
+# Qwen2.5-7B-Instruct Word Alignment Finetuning Configuration
+
+# Model settings
+model_name: "Qwen/Qwen2.5-7B-Instruct"
+model_max_length: 2048
+trust_remote_code: true
+
+# LoRA settings
+use_lora: true
+lora_r: 64
+lora_alpha: 16
+lora_dropout: 0.1
+lora_target_modules:
+  - "q_proj"
+  - "k_proj" 
+  - "v_proj"
+  - "o_proj"
+  - "gate_proj"
+  - "up_proj"
+  - "down_proj"
+
+# Training settings
+output_dir: "./outputs/qwen-alignment-model"
+num_train_epochs: 2
+per_device_train_batch_size: 4
+per_device_eval_batch_size: 4
+gradient_accumulation_steps: 4
+learning_rate: 2e-4
+weight_decay: 0.01
+warmup_ratio: 0.1
+lr_scheduler_type: "cosine"
+logging_steps: 10
+save_steps: 500
+save_total_limit: 3
+eval_strategy: "steps"
+eval_steps: 500
+load_best_model_at_end: true
+metric_for_best_model: "eval_loss"
+greater_is_better: false
+
+# Data settings
+data_path: "./outputs/training_data.jsonl"
+max_seq_length: 2048
+train_split: 0.9
+seed: 42
+
+# Optimization settings
+optim: "adamw_torch"
+adam_beta1: 0.9
+adam_beta2: 0.999
+adam_epsilon: 1e-8
+max_grad_norm: 1.0
+
+# Mixed precision
+fp16: false
+bf16: true
+
+# Quantization (for memory efficiency)
+load_in_4bit: true
+bnb_4bit_compute_dtype: "bfloat16"
+bnb_4bit_use_double_quant: true
+bnb_4bit_quant_type: "nf4"
+
+# Logging
+report_to: "wandb"
+run_name: "qwen-turkish-english-alignment"
+
+# Generation settings for inference
+do_sample: false
+temperature: 0.1
+top_p: 0.9
+max_new_tokens: 512
+

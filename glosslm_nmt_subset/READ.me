@@ -1,0 +1,4 @@
+python create_final_subset.py   
+python create_source_target_files.py
+python find_duplicates.py --mode aligned --remove training_data_100k_tr_odin/aligned_pairs.tsv
+python create_source_target_files.py --from-tsv --input training_data_100k_tr_odin/aligned_pairs.tsv

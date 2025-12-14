@@ -1,0 +1,64 @@
+# Example OpenNMT-py configuration file for RNN-based NMT with BPE tokenization
+# Update the paths below to match your data directory structure
+
+accum_count: 2
+batch_size: 32
+batch_type: sents
+bucket_size: 8192
+
+data:
+  corpus_1:
+    path_src: data/processed/train.transcription
+    path_tgt: data/processed/train.translation
+    weight: 1
+  valid:
+    path_src: data/processed/valid.transcription
+    path_tgt: data/processed/valid.translation
+
+dec_layers: 2
+decoder_type: rnn
+dropout: 0.3
+early_stopping: 9
+early_stopping_criteria: ppl
+enc_layers: 2
+encoder_type: rnn
+global_attention: general
+gpu_ranks:
+  - 0
+keep_checkpoint: 20
+label_smoothing: 0.1
+learning_rate: 0.8
+learning_rate_decay: 0.7
+max_epochs: 13
+max_grad_norm: 1.0
+model_dtype: fp16
+normalization: sents
+num_workers: 1
+optim: sgd
+param_init: 0.1
+prefetch: 1
+report_every: 10
+rnn_size: 512
+rnn_type: LSTM
+save_checkpoint_steps: 500
+save_model: models/rnn_gloss_nmt_bpe
+seed: 3435
+src_subword_alpha: 0.0
+src_subword_model: data/processed/spm.transcription.model
+src_subword_nbest: 1
+src_subword_type: bpe
+src_vocab: data/processed/vocab.transcription
+start_decay_at: 9
+tensorboard: true
+tensorboard_log_dir: models/logs
+tgt_subword_alpha: 0.0
+tgt_subword_model: data/processed/spm.translation.model
+tgt_subword_nbest: 1
+tgt_subword_type: bpe
+tgt_vocab: data/processed/vocab.translation
+train_from: ''
+train_steps: 100000
+valid_steps: 250
+word_vec_size: 300
+world_size: 1
+

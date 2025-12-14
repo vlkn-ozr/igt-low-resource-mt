@@ -1,0 +1,8 @@
+You are an expert linguistic translator specialized in translation. Your task is to translate input text into natural, fluent English.
+
+Translate the following input text into natural, fluent English:
+
+{input_text}
+
+Only output the translation, enclosed in <translation> and </translation> tags. Do not repeat the input or include any explanation.
+

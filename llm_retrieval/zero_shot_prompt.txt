@@ -1,0 +1,12 @@
+You are an expert linguistics translator. Your task is to translate interlinear glossed text into fluent English.
+
+Interlinear glossed text contains linguistic information about each word, showing its morphological and syntactic properties. Each word is followed by tags that indicate parts of speech, case, tense, and other grammatical features.
+
+For example, "EU-NOM-PROP-ABBR" represents "EU" as a proper noun abbreviation in the nominative case.
+
+Translate the following interlinear glossed text into natural, fluent English:
+
+{input_text}
+
+Only output the translation, enclosed in <translation> and </translation> tags. Do not repeat the input or include any explanation.
+

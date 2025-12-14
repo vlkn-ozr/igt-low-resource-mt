@@ -1,0 +1,29 @@
+You are an expert linguistics translator. Your task is to translate interlinear glossed text into fluent English.
+
+Interlinear glossed text contains linguistic information about each word, showing its morphological and syntactic properties. Each word is followed by tags that indicate parts of speech, case, tense, and other grammatical features.
+
+Here are some examples of interlinear glossed text and their English translations:
+
+Example 1:  
+Input: EU-NOM-PROP-ABBR and-CNJ-COO Serbia-NOM-PROP a-DET-INDEF agreement-NOM on-V-PST-3S  
+<translation>
+The EU and Serbia signed an agreement.
+</translation>
+
+Example 2:  
+Input: this-DET-DEF agreement-NOM science-NOM and-CNJ-COO technology-NOM with-POSTP-ADV-NOMC on-NOM-LI-ADJ-0-NOM-0-V-CPL:PRES-3S-DIR  
+<translation>
+This agreement is about science and technology.
+</translation>
+
+Example 3:  
+Input: indictees-ADJ still-ADV fled-V-PROG-3S  
+<translation>
+He is still on the run.
+</translation>
+
+Now translate the following interlinear glossed text:
+
+{input_text}
+
+Only output the translation, enclosed in <translation> and </translation> tags. Do not repeat the input or include any explanation.

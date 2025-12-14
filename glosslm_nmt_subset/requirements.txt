@@ -1,0 +1,6 @@
+datasets>=2.15.0
+pandas>=2.0.0
+requests
+tqdm
+pycountry
+iso639

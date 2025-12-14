@@ -1,0 +1,8 @@
+datasets
+pandas
+numpy
+tqdm
+pycountry
+iso639
+requests
+

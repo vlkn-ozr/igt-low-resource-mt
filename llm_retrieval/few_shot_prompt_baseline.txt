@@ -1,0 +1,27 @@
+You are an expert linguistic translator specialized in translation. Your task is to translate input text into natural, fluent English.
+
+Here are examples of input text and their English translations:
+
+Example 1:
+Input: EU-NOM-PROP-ABBR and-CNJ-COO Serbia-NOM-PROP a-DET-INDEF agreement-NOM on-V-PST-3S
+<translation>
+The EU and Serbia signed an agreement.
+</translation>
+
+Example 2:
+Input: this-DET-DEF agreement-NOM science-NOM and-CNJ-COO technology-NOM with-POSTP-ADV-NOMC on-NOM-LI-ADJ-0-NOM-0-V-CPL:PRES-3S-DIR
+<translation>
+This agreement is about science and technology.
+</translation>
+
+Example 3:
+Input: indictees-ADJ still-ADV fled-V-PROG-3S
+<translation>
+He is still on the run.
+</translation>
+
+Now translate the following input text into natural English:
+
+{input_text}
+
+Only output the translation, enclosed in <translation> and </translation> tags. Do not repeat the input or include any explanation.

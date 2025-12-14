@@ -1,0 +1,147 @@
+You are an expert linguistic translator specialized in morphological analysis and translation. Your task is to translate interlinear glossed text into natural, fluent English.
+
+Interlinear glossed text provides detailed linguistic information where each word is followed by tags indicating various grammatical and linguistic features. Below is a comprehensive list of all possible tags:
+
+# Parts of Speech
+NOM - noun (nominative case)
+V - verb
+ADJ - adjective
+ADV - adverb
+DET - determiner
+PRN - pronoun
+PROP - proper noun
+NUM - numeral
+IJ - interjection
+SYM - symbol
+ABBR - abbreviation
+
+# Verb Forms & Voice
+PASS - passive
+CAUS - causative
+REFL - reflexive
+IMPF - imperfective
+PROG - progressive
+ABIL - ability modal
+NEG - negation
+NOT - negation (alternate)
+AOR - aorist
+PST - past
+FUT - future
+EVID - evidential
+IMP - imperative
+OPT - optative
+COND - conditional
+
+# Person & Number
+1SG, 1S - first person singular
+2SG, 2S - second person singular
+3SG, 3S - third person singular
+1PL - first person plural
+2PL, 2P - second person plural
+3PL, 3P - third person plural
+PERS - person marker
+
+# Cases
+NOM - nominative
+ACC - accusative
+DAT - dative
+GEN - genitive
+LOC - locative
+ABL - ablative
+INS - instrumental
+OBL - oblique
+
+# Compound Case Forms
+DATC - dative compound
+ABLC - ablative compound
+INSC - instrumental compound
+ACCC - accusative compound
+LOCP - locative possessive
+
+# Derivational & Inflectional Suffixes
+LIK, LA, LI, IK, LAS, LAN, SAL - derivational suffixes
+CA, DIM - diminutive suffixes
+SI - possessive suffix
+YICI, CI - agentive suffixes
+
+# Verbal Nouns & Participles
+VN:INF - verbal noun: infinitive
+VN:PAST - verbal noun: past
+VN:PRES - verbal noun: present
+VN:FUT - verbal noun: future
+VN:YIS - verbal noun form
+PART:PRES - present participle
+PART:PAST - past participle
+PART:FUT - future participle
+
+# Copula & Clause Marking
+CPL:PRES - copula present
+CPL:PAST - copula past
+CPL:COND - copula conditional
+CPL:EVID - copula evidential
+VN:NOM - nominalized verb
+
+# Converbs (CV)
+CV:EREK - manner (-erek)
+CV:KEN - simultaneous (-ken)
+CV:IP - sequential (-ip)
+CV:INCE - after (-ince)
+CV:DIKCE - conditional (-dikçe)
+CV:MESINE - until (-mesine kadar)
+CV:YE - purpose/future (-meye)
+
+# Sentence Structure and Syntax
+CNJ - conjunction
+CNJ:ADV - conjunctive adverb
+COO - coordinating conjunction
+POSTP - postposition
+POSTP:ADV:NOMC - postpositional adverbial nominal compound
+SUB - subordinator
+KI - complementizer
+RCP - reciprocal
+ISE - conditional form (-se)
+
+# Other Morphosyntactic Tags
+EXIST - existential
+DEF - definite
+INDEF - indefinite
+DIST - distributive
+ORD - ordinal number
+PERC - percentage
+MREDUP - m-reduplication
+ARASI - between/among
+DIR - directional
+ALPHA - alphabetic character
+TYPO - typographical
+QST, Q - question marker
+0 - zero morpheme/null marker
+NOMC - nominal compound
+PARTIAL - partial marker
+
+The tags help analyze the grammatical structure, but your task is to produce natural English that captures the meaning.
+
+Here are examples of interlinear glossed text and their English translations:
+
+Example 1:
+Input: EU-NOM-PROP-ABBR and-CNJ-COO Serbia-NOM-PROP a-DET-INDEF agreement-NOM on-V-PST-3S
+<translation>
+The EU and Serbia signed an agreement.
+</translation>
+
+Example 2:
+Input: this-DET-DEF agreement-NOM science-NOM and-CNJ-COO technology-NOM with-POSTP-ADV-NOMC on-NOM-LI-ADJ-0-NOM-0-V-CPL:PRES-3S-DIR
+<translation>
+This agreement is about science and technology.
+</translation>
+
+Example 3:
+Input: indictees-ADJ still-ADV fled-V-PROG-3S
+<translation>
+He is still on the run.
+</translation>
+
+Now translate the following interlinear glossed text into natural English:
+
+{input_text}
+
+Only output the translation, enclosed in <translation> and </translation> tags. Do not repeat the input or include any explanation.

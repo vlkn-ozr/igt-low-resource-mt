@@ -1,0 +1,10 @@
+INC-E3S-sacar-PAS ART collar PREP-SREL persona
+CONJ PART ART E3S-compañero E3S-compañero ART Marimar
+DEM COM-hacer PL INC-E1S-SREL-yo antiguamente
+COM-entrar PREP-E3S E3S-sacar-PAS ART collar adentro
+loque COM-hacer-PAS él/ella
+como licenciado PART
+por es loque INC-hacer-PAS antiguamente
+loque INC-E3S-hacer persona él/ella difeernte persona
+siempre INC-E3S-pagar PART
+diferente persona PART
