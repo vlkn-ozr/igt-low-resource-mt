@@ -1,0 +1,4 @@
+ascii-allcaps.fst:  ascii-capitalize.fst ascii-upper.fst
+
+ascii-capitalize.fst:
+ascii-upper.fst:

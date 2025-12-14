@@ -1,0 +1,4 @@
+segment.cpp.xfst:  analyzer.cpp.lexc morph-phon.cpp.xfst
+
+analyzer.cpp.lexc:
+morph-phon.cpp.xfst:

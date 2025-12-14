@@ -1,0 +1,64 @@
+TRMOR is a Turkish computational morphology which was developed by
+Ayla Kayabas. It covers a large part of the Turkish morphology
+including inflection, derivation and compounding.
+
+The lexicon of TRMOR contains 36632 entries that each entry consists of many
+different types of entries. See the paper for more information on the
+features used in the lexicon.
+
+Compilation
+===========
+
+Simply call the command
+> make
+
+Analysis
+========
+
+For interactive usage, use the command fst-mor
+
+> fst-mor morph.a
+reading automaton...
+finished.
+analyse> çiçeğim
+çiçek<N><sg><POSS><1><sg><Nom>
+çiçek<N><sg><POSS><1><sg><PRO><3><sg>
+çiçek<N><sg><POSS><3><sg><PRO><1><sg>
+çiçek<N><sg><PRO><1><sg>
+çiçek<N><POSS><1><sg><Nom>
+analyse> kalem
+kalem<N><sg><Nom>
+kalem<N><sg><PRO><3><sg>
+kalem<N><Nom>
+kale<N><sg><POSS><1><sg><Nom>
+kale<N><sg><PRO><1><sg>
+kale<N><POSS><1><sg><Nom>
+analyse> çiçekseverim
+çiçeksever<N><sg><POSS><1><sg><Nom>
+çiçeksever<N><sg><POSS><1><sg><PRO><3><sg>
+çiçeksever<N><sg><POSS><3><sg><PRO><1><sg>
+çiçeksever<N><sg><PRO><1><sg>
+çiçeksever<N><POSS><1><sg><Nom>
+analyse> 
+generate> çiçek<N><sg><PRO><1><sg>
+çiçeğim
+generate> q
+
+Remark: Empty lines switch fst-mor between analysis and generation
+mode. "q" terminates the program.
+
+
+Otherwise use the faster command
+> fst-infl2 morph.ca file
+where "file" contains a list of words with one word per line.
+
+TRMOR can be freely used for research, education and evaluation.
+
+If you want to refer to TRMOR in a publication, please cite the
+following article:
+
+Ayla Kayabaş, Helmut Schmid, Ahmet E. Topcu, Özkan Kiliç
+TRMOR: a finite-state-based morphological analyzer for Turkish
+In: Turkish Journal of Electrical Engineering & Computer Sciences (TÜBITAK)
+(2019) 27:3837-3851
+URL: http://journals.tubitak.gov.tr/elektrik/issues/elk-19-27-5/elk-27-5-41-1902-125.pdf

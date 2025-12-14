@@ -1,0 +1,6 @@
+url.fst:  ascii.fst digit.fst internet-domain-name.fst ip-addr.fst
+
+ascii.fst:
+digit.fst:
+internet-domain-name.fst:
+ip-addr.fst:

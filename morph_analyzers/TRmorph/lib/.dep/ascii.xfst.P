@@ -1,0 +1,3 @@
+ascii.fst:  ascii-lower.fst
+
+ascii-lower.fst:

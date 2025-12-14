@@ -1,0 +1,4 @@
+stemmer.cpp.xfst:  options.h trmorph.fst
+
+options.h:
+trmorph.fst:

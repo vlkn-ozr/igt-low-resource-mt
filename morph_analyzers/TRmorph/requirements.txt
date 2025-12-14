@@ -1,0 +1,4 @@
+# Python dependencies for TRmorph scripts
+# Note: TRmorph itself requires foma (not a Python package)
+# Install foma separately: https://github.com/mhulden/foma
+

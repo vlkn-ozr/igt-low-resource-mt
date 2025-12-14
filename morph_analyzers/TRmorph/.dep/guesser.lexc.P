@@ -1,0 +1,4 @@
+guesser.cpp.lexc:  options.h morph.cpp.lexc
+
+options.h:
+morph.cpp.lexc:

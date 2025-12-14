@@ -1,0 +1,5 @@
+guesser.cpp.xfst:  options.h guesser.cpp.lexc morph-phon.cpp.xfst
+
+options.h:
+guesser.cpp.lexc:
+morph-phon.cpp.xfst:

@@ -1,0 +1,6 @@
+email-string.fst:  internet-domain-name.fst ip-addr.fst digit.fst ascii.fst
+
+internet-domain-name.fst:
+ip-addr.fst:
+digit.fst:
+ascii.fst:

@@ -1,0 +1,7 @@
+internet-domain-name.fst:  ascii-lower.fst digit.fst ascii-capitalize.fst ascii-allcaps.fst dns-tld.fst
+
+ascii-lower.fst:
+digit.fst:
+ascii-capitalize.fst:
+ascii-allcaps.fst:
+dns-tld.fst:

@@ -1,0 +1,7 @@
+analyzer.cpp.xfst:  options.h analyzer.cpp.lexc lib/url.fst lib/email.fst morph-phon.cpp.xfst
+
+options.h:
+analyzer.cpp.lexc:
+lib/url.fst:
+lib/email.fst:
+morph-phon.cpp.xfst:

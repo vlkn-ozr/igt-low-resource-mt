@@ -1,0 +1,4 @@
+morph.cpp.lexc:  options.h multi-char.lexc
+
+options.h:
+multi-char.lexc:
